@@ -1,0 +1,16 @@
+<nav id="sidenav" class="sidenav" [ngClass]="{'sidenav' : showMenu, 'open': !showMenu}">
+        <ul>
+            @for(option of options; track $index){
+                <li [routerLink]="['/'+option.label]" routerLinkActive="router-link-active" > 
+                    <span class="">
+                        <img [src]="option.icon" alt="">
+                    </span>
+                    @if (!showMenu) {
+                    <span class="label-menu">
+                        {{option.label}}
+                    </span>
+                    }
+                </li>
+            }
+        </ul>
+</nav>

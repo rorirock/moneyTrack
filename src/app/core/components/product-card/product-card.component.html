@@ -1,0 +1,24 @@
+<mat-card class="product-card" appearance="outlined">
+    <mat-card-header class="header-card">
+      
+      <div class="check">
+        <mat-checkbox ></mat-checkbox>
+      </div>
+      <div class="title-product">
+        <span class="name">{{product.nameProduct}}</span><br>
+        <span class="number">#{{product.numberProduct}}</span>
+      </div>
+      
+    </mat-card-header>
+    <hr class="line"/>
+    <mat-card-content>
+       
+      <div class="product-descript">
+            <span class="detail">{{product.detaildProduct}}:</span><br>
+            <span class="balance">${{product.balanceProduct}}</span>
+      </div>
+
+      <app-description />
+
+    </mat-card-content>
+</mat-card>

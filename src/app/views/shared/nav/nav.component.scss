@@ -1,0 +1,50 @@
+@import '../../../core/@themes/theme.scss';
+
+
+.sidenav, .open{
+    position: absolute;
+    z-index: 10000;
+    height: 100vh;
+}
+.sidenav{
+    left: 0px;
+    top: 0;
+    width: 50px;
+    margin-right: 160px;
+    background: $background-light-grey;
+    margin-top: 60px;
+}
+
+.open {
+    width: 210px;
+    background: $background-light-grey;
+    color: $text-color;
+    transition: left 0.3s ease-in-out;
+    .label-menu{
+        font-size: $font-size-16;
+        color: $text-color;
+        margin: 0 10px;
+    }
+}
+
+ul{
+    list-style: none;
+    background: $background-light-grey;
+    padding: 0;
+    li{
+        padding: 10px 15px;
+        cursor: pointer; 
+    }
+}
+
+.router-link-active{
+    background-color: $light-text;
+}
+
+@media (max-width: 768px) {
+    .sidenav {
+      left: -50px;
+      width: 0;
+
+    }
+}

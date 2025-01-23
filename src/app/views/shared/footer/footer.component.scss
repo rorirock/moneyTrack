@@ -1,0 +1,46 @@
+@import '../../../core/@themes/theme.scss';
+
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      .additional-info{
+        text-align: center;
+      }
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $text-color;
+    box-shadow: 0px 0px 6px $background-dark;
+    padding: 50px 0px;
+    z-index: 20000;
+    position: relative;
+    background: $primary-color;
+    aside{
+        width: 250px;
+        height: auto;
+        a{
+            font-size: $font-size-14;
+            color: $text-color;
+        }
+    }
+    .contact-info{
+        .phone{
+            color: $light-text;
+        }
+        .global{
+            font-weight: 700;
+        }
+    }
+    .additional-info{
+        width: 390px;
+    }
+    .social-networks{
+        display: flex;
+        justify-content: space-around;
+        align-items: end;
+    }
+}

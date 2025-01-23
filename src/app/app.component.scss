@@ -1,0 +1,32 @@
+
+
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  padding: 20px 25vh;
+  transition: margin-left 0.3s ease-in-out;
+  overflow-x: hidden; 
+}
+
+@media (max-width: 1024px) {
+  .main-content {
+    padding: 20px 10vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 20px 0vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 20px 0vh;
+  }
+}
+

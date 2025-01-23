@@ -1,0 +1,37 @@
+@import '../../../core/@themes/theme.scss';
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    }
+  
+    .carousel-container{
+      flex: 1;
+      overflow: hidden;
+      .carousel-track {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        app-product-card{
+          flex: 0 0 calc(100% / 3);
+          max-width: 100%;
+          box-sizing: border-box;
+          padding: 10px 10px; 
+        }
+      }
+    }
+}

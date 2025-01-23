@@ -1,0 +1,20 @@
+<div class="carousel">
+  <!-- prev button -->
+  <button (click)="prev()" [disabled]="currentIndex === 0">
+    <img src="../../../../assets/image/arrow-grey.svg" alt="Anterior">
+  </button>
+
+  <!-- carousel -->
+  <div class="carousel-container">
+    <div class="carousel-track" [style.transform]="'translateX(-' + currentIndex * 100 + '%)'">
+        @for(product of products; track $index){
+            <app-product-card  [product]="product" />
+        }
+    </div>
+  </div>
+
+  <!-- next button  -->
+  <button (click)="next()" [disabled]="currentIndex === products.length - visibleCards">
+    <img src="../../../../assets/image/arrow-green.svg" alt="Siguiente">
+  </button>
+</div>

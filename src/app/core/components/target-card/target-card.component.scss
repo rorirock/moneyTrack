@@ -1,0 +1,87 @@
+@import '../../../core/@themes/theme.scss';
+
+.content-target-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 250px;
+    padding: 25px;
+    background: $primary-color;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px $background-dark;
+    margin-left: calc(50% - 325px);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .title-goal{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        color: $text-color;
+        p{
+            margin: 0;
+            font-size: $font-size-18;
+            b{
+                font-weight: normal;
+                color:$text-color;
+            }
+        }
+        a{
+            color: $light-text;
+            font-weight: bold;
+        }
+    }
+
+    .content-goals{
+        margin-top: 15px;
+        span{
+            width: 25%;
+            text-align: center;
+            padding: 6px 6px;
+            border-radius: 5px;
+            font-size: $font-size-16;
+        }
+        .title, .goals{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: $font-size-16;
+        }
+        .goals{
+            font-weight: 700;
+            .date, .money, .current{
+                font-weight: bold;
+                color: $text-color;
+            }
+            .date{
+                background-color: $background-blue;
+            }
+            .money{
+                background-color: $background-orange;
+            }
+            .current{
+                background-color: $background-green-ocean;
+            }
+        }
+        img{
+            margin-right: 5px;
+        }
+    }
+    .content{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        img{
+            width: 20px;
+            height: 20px;
+        }
+        a{
+            color: $light-text;
+            font-weight: bold;
+        }
+    }
+}

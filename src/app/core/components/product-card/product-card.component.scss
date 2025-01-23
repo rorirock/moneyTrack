@@ -1,0 +1,50 @@
+@import '../../../core/@themes/theme.scss';
+
+.product-card{
+    background-color: $primary-color;
+    box-shadow: 0px 0px 3px 2px $background-dark;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    max-width: 350px;
+    max-height: 450px;
+    &:hover{
+        box-shadow: 0px 0px 2px 1px $background-light-green;
+    }
+    span{
+        font-size: $font-size-18;
+    }
+    .header-card{
+        flex-direction: column;
+        .check{
+            text-align: right;
+            width: 100%;
+            color: $light-text;
+        }
+        .title-product{
+            .name{
+                font-weight: 700;
+                color: $text-color;
+            }
+            .number{
+                color: $text-color;
+            }
+        }
+    }
+    .line{
+        color: $background-dark;
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .product-descript{
+        margin-bottom: 50px;
+        .detail{
+            font-weight: 700;
+            color: $text-bold;
+        }
+        .balance{
+            color: $light-text;
+        }
+    }
+}

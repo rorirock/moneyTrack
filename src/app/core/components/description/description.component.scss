@@ -1,0 +1,33 @@
+@import '../../../core/@themes/theme.scss';
+
+.content-descrip{
+    background-color: $background-grey;
+    width: auto;
+    max-width: 330px;
+    height: 100%;
+    max-height: 90px;
+    padding: 10px;
+    img{
+        position: relative;
+        left: calc(50% - 12px);
+        top: -25px;
+        width: auto;
+        height: 100%;
+        max-height: 32px;
+    }
+    p{
+        color: $text-color;
+        text-align: center;
+        font-size: $font-size-12;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .content-descrip{
+        max-width: 330px;
+        height: 100%;
+        max-height: 150px;
+        padding: 10px;
+    }
+}

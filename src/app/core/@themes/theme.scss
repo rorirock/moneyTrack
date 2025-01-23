@@ -1,0 +1,26 @@
+$primary-color: #FFFFFF;
+
+
+//color text
+
+$text-color: #3F3F3F;
+$light-text: #00C83C;
+$text-orange: #FE9200;
+$text-bold:  #363636;
+
+//Background
+$background-grey: #EDEDED;
+$background-light-grey: #E2E2E2;
+$background-dark :#00000029;
+$background-blue: #A5D7E1;
+$background-orange: #FECD72;
+$background-green-ocean: #95DBB7;
+$background-green: #A4D071;
+$background-light-green: #00C53C;
+
+//calc font-size dinamic
+$font-size-12: clamp(0.5rem, 0.34rem + 0.656vw, 0.75rem);
+$font-size-14: clamp(0.563rem, 0.363rem + 0.82vw, 0.875rem);
+$font-size-16: clamp(0.625rem, 0.385rem + 0.984vw, 1rem);
+$font-size-18: clamp(0.688rem, 0.408rem + 1.148vw, 1.125rem);
+$font-size-25: clamp(1.125rem, 0.845rem + 1.148vw, 1.563rem);

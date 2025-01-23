@@ -1,0 +1,116 @@
+@import '../../../core/@themes/theme.scss';
+
+mat-toolbar{
+    background-color: $primary-color;
+    color: $text-color;
+    justify-content: space-between;
+    padding: 4px;
+    .title-skandia{
+      margin-left: 140px;
+        span{
+            font-size: $font-size-18;
+        }
+    }
+    .burger{
+        color: $light-text;
+    }
+    .content-options{
+        display: flex;
+        margin-right: 140px;
+        .options{
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            margin: 0px 10px;
+            .icon-option{
+                width: 24px;
+                height: 24px;
+                margin: 0px 5px;
+            }
+            .option{
+                cursor: pointer;
+                font-size: 14px;
+                color: $light-text;
+                text-decoration: underline;
+                letter-spacing: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1920px){
+  mat-toolbar{
+    .title-skandia{
+        margin-left: 140px;
+    }
+  }
+}
+
+@media (max-width: 1024px){
+  mat-toolbar{
+    .title-skandia{
+        font-size: $font-size-16;
+        margin-left: 140px;
+      img {
+        max-width: 120px;
+      }
+    }
+    
+
+    .content-options{
+      .options {
+        .option {
+          font-size: $font-size-12;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px){ 
+  mat-toolbar{
+    .title-skandia{
+      font-size: $font-size-14;
+      margin-left: 40px;
+      img {
+        max-width: 100px;
+      }
+    }
+    
+    .content-options{
+      .options {
+        flex-direction: row;
+        justify-content: center;
+        .option {
+            display: none;
+        }
+      }
+    }
+  }  
+}
+
+
+@media (max-width: 480px){
+  mat-toolbar{
+    .title-skandia {
+        margin-left: 10px;
+        font-size: $font-size-12;
+        img {
+          max-width: 80px;
+      }
+    }
+
+    .content-options{
+      display: none;
+      .options{  
+        .icon-option{
+          width: 20px;
+          height: 20px;
+        }
+        .option{
+          font-size: $font-size-12;
+        }
+      }
+    }
+  }
+}

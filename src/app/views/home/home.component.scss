@@ -1,0 +1,34 @@
+@import '../../core/@themes/theme.scss';
+
+.content-home{
+    .title-objetivo{
+        text-align: center;
+        h2, span{
+            color: $text-color;
+        }
+        h2{
+            font-size: $font-size-25;
+            font-weight: 700;
+        }
+        span{
+            font-size: $font-size-16;
+        }
+    }
+    .text-goal{
+        text-align: center;
+        h2{
+            font-size: $font-size-25;
+            font-weight: 700;
+            .money, .name{
+                color: $text-orange;
+            }
+        }
+        p{
+            font-size: $font-size-16;
+            color:$text-color;
+            span{
+                font-weight: 700;
+            }
+        }
+    }
+}
