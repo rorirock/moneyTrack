@@ -48,3 +48,17 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .product-card{
+        max-height: 510px;
+        padding: 0px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .product-card{
+        max-height: 560px;
+        padding: 0px;
+    }
+  }

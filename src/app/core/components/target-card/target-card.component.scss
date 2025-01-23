@@ -85,3 +85,17 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .content-target-card{
+        max-width: 450px;
+        margin-left: calc(50% - 250px);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .content-target-card{
+        max-width: 350px;
+        margin-left: calc(50% - 200px);
+    }
+  }

@@ -31,3 +31,15 @@
         padding: 10px;
     }
 }
+
+@media (max-width: 768px) {
+    .content-descrip{
+        max-height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-descrip{
+        max-height: 200px;
+    }
+}
