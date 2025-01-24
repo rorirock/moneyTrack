@@ -72,11 +72,11 @@ Modifica estos archivos para agregar configuraciones específicas.
 
 ## Herramientas y librerías utilizadas
 
-Angular - Framework de desarrollo
-Angular Material - Librería de componentes UI
-RxJS - Programación reactiva
-SCSS - Preprocesador de estilos
-Karma - Pruebas unitarias
-Jasmine - Framework para pruebas unitarias
+ - Angular - Framework de desarrollo
+ - Angular Material - Librería de componentes UI
+ - RxJS - Programación reactiva
+ - SCSS - Preprocesador de estilos
+ - Karma - Pruebas unitarias
+ - Jasmine - Framework para pruebas unitarias
 
 
