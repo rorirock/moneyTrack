@@ -35,3 +35,15 @@
       }
     }
 }
+
+@media (max-width: 640px) {
+  .carousel{
+    .carousel-container{
+      .carousel-track {
+        app-product-card{
+          flex: 0 0 calc(100% / 2);
+        }
+      }
+    }
+  }
+}

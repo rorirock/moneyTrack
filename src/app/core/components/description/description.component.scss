@@ -38,8 +38,14 @@
     }
 }
 
+@media (max-width: 640px) {
+    .content-descrip{
+        max-height: 120px;
+    }
+}
+
 @media (max-width: 480px) {
     .content-descrip{
-        max-height: 200px;
+        max-height: 135px;
     }
 }
