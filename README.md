@@ -1,27 +1,82 @@
 # MoneyTrack
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.10.
+Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) versión 17.3.10.
 
-## Development server
+## Requisitos previos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Antes de ejecutar la aplicación, asegúrate de tener instalado:
 
-## Code scaffolding
+- [Node.js](https://nodejs.org/) (versión recomendada: 18.x o superior)
+- [Angular CLI](https://angular.io/cli) (versión utilizada en el proyecto: 17.3.10)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Para verificar si Angular CLI está instalado, ejecuta:
 
-## Build
+ng version
+node -v 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Intalacion de proyecto
 
-## Running unit tests
+clonar repositorio
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- git clone https://github.com/rorirock/moneyTrack.git
 
-## Running end-to-end tests
+- cd moneytrack
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Ahora instalamos las dependencias ejecutando:
 
-## Further help
+- npm install
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Ejecutar la aplicación
+
+Para iniciar el servidor de desarrollo, ejecuta:
+
+- ng serve
+
+Luego, abre tu navegador en http://localhost:4200/. La aplicación se recargará automáticamente si realizas cambios en los archivos fuente.
+
+## Estilos
+
+Este proyecto utiliza SCSS como preprocesador de estilos y está basado en la librería de componentes Angular Material.
+Para personalizar la apariencia de los componentes, revisa el archivo src/styles.scss.
+
+## Generación de componentes
+
+Para generar un nuevo componente, utiliza el siguiente comando:
+
+- ng generate component nombre-del-componente
+
+
+## Construcción del proyecto
+
+Para compilar la aplicación en modo producción, ejecuta:
+
+- ng build --configuration production
+ 
+Los archivos generados se almacenarán en el directorio dist/.
+
+
+## Pruebas unitarias
+
+Para ejecutar las pruebas unitarias con Karma, usa:
+
+- ng test
+
+## Variables de entorno
+
+Este proyecto maneja variables de entorno mediante los archivos:
+
+ - src/environments/environment.dev.ts (para desarrollo)
+
+Modifica estos archivos para agregar configuraciones específicas.
+
+## Herramientas y librerías utilizadas
+
+Angular - Framework de desarrollo
+Angular Material - Librería de componentes UI
+RxJS - Programación reactiva
+SCSS - Preprocesador de estilos
+Karma - Pruebas unitarias
+Jasmine - Framework para pruebas unitarias
+
+

@@ -1,4 +1,4 @@
-<nav id="sidenav" class="sidenav" [ngClass]="{'sidenav' : showMenu, 'open': !showMenu}">
+<div id="sidenav" class="sidenav" [ngClass]="{'sidenav' : showMenu, 'open': !showMenu}">
         <ul>
             @for(option of options; track $index){
                 <li [routerLink]="['/'+option.label]" routerLinkActive="router-link-active" > 
@@ -13,4 +13,4 @@
                 </li>
             }
         </ul>
-</nav>
+    </div>
